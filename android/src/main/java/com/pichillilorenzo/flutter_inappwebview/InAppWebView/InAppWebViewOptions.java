@@ -21,11 +21,11 @@ public class InAppWebViewOptions extends Options {
   public Boolean useOnLoadResource = false;
   public Boolean useOnDownloadStart = false;
   public Boolean clearCache = false;
-  public String userAgent = "";
+  public String userAgent = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19";
   public String applicationNameForUserAgent = "";
   public Boolean javaScriptEnabled = true;
   public Boolean debuggingEnabled = false;
-  public Boolean javaScriptCanOpenWindowsAutomatically = false;
+  public Boolean javaScriptCanOpenWindowsAutomatically = true;
   public Boolean mediaPlaybackRequiresUserGesture = true;
   public Integer minimumFontSize = 8;
   public Boolean verticalScrollBarEnabled = true;
@@ -33,7 +33,7 @@ public class InAppWebViewOptions extends Options {
   public List<String> resourceCustomSchemes = new ArrayList<>();
   public List<Map<String, Map<String, Object>>> contentBlockers = new ArrayList<>();
   public Integer preferredContentMode = PreferredContentModeOptionType.RECOMMENDED.toValue();
-  public Boolean useShouldInterceptAjaxRequest = false;
+  public Boolean useShouldInterceptAjaxRequest = true;
   public Boolean useShouldInterceptFetchRequest = false;
   public Boolean incognito = false;
   public Boolean cacheEnabled = true;
