@@ -664,8 +664,13 @@ final public class InAppWebView extends InputAwareWebView {
     settings.setSaveFormData(options.saveFormData);
     if (options.incognito)
       setIncognito(true);
-    if (options.hardwareAcceleration)
-      setLayerType(View.LAYER_TYPE_HARDWARE, null);
+    if (options.hardwareAcceleration) {
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+          setLayerType(View.LAYER_TYPE_HARDWARE, null);
+      } else {
+          setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+      }
+    }
     else
       setLayerType(View.LAYER_TYPE_SOFTWARE, null);
     if (options.regexToCancelSubFramesLoading != null) {
