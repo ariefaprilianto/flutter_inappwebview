@@ -15,7 +15,7 @@ public class InAppWebViewOptions: Options {
     var useOnLoadResource = false
     var useOnDownloadStart = false
     var clearCache = false
-    var userAgent = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19"
+    var userAgent = ""
     var applicationNameForUserAgent = ""
     var javaScriptEnabled = true
     var debuggingEnabled = true
