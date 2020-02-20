@@ -21,7 +21,7 @@ public class InAppWebViewOptions extends Options {
   public Boolean useOnLoadResource = false;
   public Boolean useOnDownloadStart = false;
   public Boolean clearCache = false;
-  public String userAgent = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19";
+  public String userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X MyNakama) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E217";
   public String applicationNameForUserAgent = "";
   public Boolean javaScriptEnabled = true;
   public Boolean debuggingEnabled = false;

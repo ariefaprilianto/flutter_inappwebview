@@ -948,8 +948,8 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate, WKNavi
         let jscriptWebkitTouchCallout = WKUserScript(source: "document.body.style.webkitTouchCallout='none';", injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         configuration.userContentController.addUserScript(jscriptWebkitTouchCallout)
         
-        let promisePolyfillJSScript = WKUserScript(source: promisePolyfillJS, injectionTime: .atDocumentStart, forMainFrameOnly: false)
-        configuration.userContentController.addUserScript(promisePolyfillJSScript)
+        // let promisePolyfillJSScript = WKUserScript(source: promisePolyfillJS, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+        // configuration.userContentController.addUserScript(promisePolyfillJSScript)
         
         let javaScriptBridgeJSScript = WKUserScript(source: javaScriptBridgeJS, injectionTime: .atDocumentStart, forMainFrameOnly: false)
         configuration.userContentController.addUserScript(javaScriptBridgeJSScript)
