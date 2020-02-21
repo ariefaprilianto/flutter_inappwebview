@@ -133,7 +133,7 @@ class InAppWebViewOptions
       this.useOnLoadResource = false,
       this.useOnDownloadStart = false,
       this.clearCache = false,
-      this.userAgent = "Mozilla/5.0 (Linux; Android 6.0; MyNakama Mobile App) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36",
+      this.userAgent = "Mozilla/5.0 (MyNakama Mobile App; Linux; Android 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36",
       this.applicationNameForUserAgent = "",
       this.javaScriptEnabled = true,
       this.debuggingEnabled = false,
