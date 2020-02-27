@@ -422,6 +422,11 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
     WebView.HitTestResult result = view.getHitTestResult();
     String data = result.getExtra();
 
+    Message href = view.getHandler().obtainMessage();
+    view.requestFocusNodeHref(href);
+    String url = href.getData().getString("url");
+    Log.d(LOG_TAG, "Latest onCreateWindow called, URL: " + url);
+
     if (data == null) {
       // to get the URL, create a temp weview
       final WebView tempWebView = new WebView(view.getContext());
