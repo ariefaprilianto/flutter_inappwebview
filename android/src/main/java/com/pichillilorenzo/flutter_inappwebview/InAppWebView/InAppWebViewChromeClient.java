@@ -427,7 +427,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
     String url = href.getData().getString("url");
     Log.d(LOG_TAG, "Latest onCreateWindow called, URL: " + url);
 
-    if (data == null) {
+    if (url == null) {
       // to get the URL, create a temp weview
       final WebView tempWebView = new WebView(view.getContext());
       // disable javascript
@@ -453,7 +453,7 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
       return true;
     }
 
-    obj.put("url", data);
+    obj.put("url", url);
     getChannel().invokeMethod("onCreateWindow", obj);
     return false;
   }
